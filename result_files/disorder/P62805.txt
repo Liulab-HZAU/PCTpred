@@ -1,0 +1,15 @@
+ ____  _     _____ __  __ ____  _       _  _  _
+|  _ \(_)___| ____|  \/  | __ )| |     / || || |
+| | | | / __|  _| | |\/| |  _ \| |     | || || |_
+| |_| | \__ \ |___| |  | | |_) | |___  | ||__   _|
+|____/|_|___/_____|_|  |_|____/|_____| |_(_) |_|
+# Copyright (C) 2004 - Rune Linding & Lars Juhl Jensen 
+# EMBL Biocomputing Unit - Heidelberg - Germany        
+#
+> sp|P62805|H4_HUMAN_COILS 1-17, 41-53, 95-103
+MSGRGKGGKGLGKGGAKrhrkvlrdniqgitkpairrlarRGGVKRISGLIYEetrgvlkvflenvirdavtytehakrktvtamdvvyalkrqGRTLYGFGG
+> sp|P62805|H4_HUMAN_REM465 1-19
+MSGRGKGGKGLGKGGAKRHrkvlrdniqgitkpairrlarrggvkrisgliyeetrgvlkvflenvirdavtytehakrktvtamdvvyalkrqgrtlygfgg
+> sp|P62805|H4_HUMAN_HOTLOOPS 1-58, 72-85, 93-103
+MSGRGKGGKGLGKGGAKRHRKVLRDNIQGITKPAIRRLARRGGVKRISGLIYEETRGVlkvflenvirdavTYTEHAKRKTVTAMdvvyalkRQGRTLYGFGG
+

@@ -1,0 +1,6 @@
+P84243	T	12	K	10	2l43	A	prediction_score	0.977
+P62805	K	21	K	17	5ja4	B	prediction_score	0.923
+P37840	K	12	S	129	2n0a	B	prediction_score	0.841
+P46937	S	397	S	400	NA	NA	prediction_score	0.992
+P04637	S	215	S	392	NA	NA	prediction_score	0.827
+O14920	S	177	K	163	NA	NA	prediction_score	0.867

@@ -1,0 +1,15 @@
+ ____  _     _____ __  __ ____  _       _  _  _
+|  _ \(_)___| ____|  \/  | __ )| |     / || || |
+| | | | / __|  _| | |\/| |  _ \| |     | || || |_
+| |_| | \__ \ |___| |  | | |_) | |___  | ||__   _|
+|____/|_|___/_____|_|  |_|____/|_____| |_(_) |_|
+# Copyright (C) 2004 - Rune Linding & Lars Juhl Jensen 
+# EMBL Biocomputing Unit - Heidelberg - Germany        
+#
+> sp|P04637|P53_HUMAN_COILS 1-19, 25-130, 139-156, 168-197, 204-231, 237-251, 258-331, 351-379
+MEEPQSDPSVEPPLSQETFsdlwkLLPENNVLSPLPSQAMDDLMLSPDDIEQWFTEDPGPDEAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKTYQGSYGFRLGFLHSGTAKSVTCTYSPALnkmfcqlaKTCPVQLWVDSTPPPGTRvramaiykqsqHMTEVVRRCPHHERCSDSDGLAPPQHLIRVegnlrvEYLDDRNTFRHSVVVPYEPPEVGSDCTTihynyMCNSSCMGGMNRRPIltiitlEDSSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELPPGSTKRALPNNTSSSPQPKKKPLDGEYFTLQirgrerfemfrelnealelKDAQAGKEPGGSRAHSSHLKSKKGQSTSRhkklmfktegpdsd
+> sp|P04637|P53_HUMAN_REM465 1-16, 63-101, 282-320, 354-393
+MEEPQSDPSVEPPLSQetfsdlwkllpennvlsplpsqamddlmlspddieqwftedpgpdeAPRMPEAAPPVAPAPAAPTPAAPAPAPSWPLSSSVPSQKtyqgsygfrlgflhsgtaksvtctyspalnkmfcqlaktcpvqlwvdstpppgtrvramaiykqsqhmtevvrrcphhercsdsdglappqhlirvegnlrveylddrntfrhsvvvpyeppevgsdcttihynymcnsscmggmnrrpiltiitledssgnllgrnsfevrvcacpgrdRRTEEENLRKKGEPHHELPPGSTKRALPNNTSSSPQPKKkpldgeyftlqirgrerfemfrelnealelkdaQAGKEPGGSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
+> sp|P04637|P53_HUMAN_HOTLOOPS 1-15, 181-194, 212-225, 261-325, 352-393
+MEEPQSDPSVEPPLSqetfsdlwkllpennvlsplpsqamddlmlspddieqwftedpgpdeaprmpeaappvapapaaptpaapapapswplsssvpsqktyqgsygfrlgflhsgtaksvtctyspalnkmfcqlaktcpvqlwvdstpppgtrvramaiykqsqhmtevvrrcphheRCSDSDGLAPPQHLirvegnlrveylddrntFRHSVVVPYEPPEVgsdcttihynymcnsscmggmnrrpiltiitledsSGNLLGRNSFEVRVCACPGRDRRTEEENLRKKGEPHHELPPGSTKRALPNNTSSSPQPKKKPLDGeyftlqirgrerfemfrelnealelkDAQAGKEPGGSRAHSSHLKSKKGQSTSRHKKLMFKTEGPDSD
+

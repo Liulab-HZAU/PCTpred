@@ -1,0 +1,15 @@
+ ____  _     _____ __  __ ____  _       _  _  _
+|  _ \(_)___| ____|  \/  | __ )| |     / || || |
+| | | | / __|  _| | |\/| |  _ \| |     | || || |_
+| |_| | \__ \ |___| |  | | |_) | |___  | ||__   _|
+|____/|_|___/_____|_|  |_|____/|_____| |_(_) |_|
+# Copyright (C) 2004 - Rune Linding & Lars Juhl Jensen 
+# EMBL Biocomputing Unit - Heidelberg - Germany        
+#
+> sp|O14920|IKKB_HUMAN_COILS 1-28, 49-56, 67-93, 140-152, 168-183, 216-239, 248-265, 283-302, 321-331, 341-348, 359-383, 390-419, 546-560, 576-586, 663-704
+MSWSPSLTTQTCGAWEMKERLGTGGFGNvirwhnqetgeqiaikqcrqELSPRNRErwcleiqimrRLTHPNVVAARDVPEGMQNLAPNDLPLlameycqggdlrkylnqfenccglregailtllsdiasalrylhenRIIHRDLKPENIVlqqgeqrlihkiidlGYAKELDQGSLCTSFVgtlqylapelleqqkytvtvdywsfgtlafecITGFRPFLPNWQPVQWHSKVRQKSevdivvseDLNGTVKFSSSLPYPNNLnsvlaerlekwlqlmlmWHPRQRGTDPTYGPNGCFKAlddilnlklvhilnmvtgTIHTYPVTEDEslqslkariQQDTGIPEedqellqeagLALIPDKPATQCISDGKLNEGHTLDmdlvflFDNSKITYETQISPRPQPESVSCILQEPKRnlaffqlrkvwgqvwhsiqtlkedcnrlqqgqraammnllrnnsclskmknsmasmsqqlkakldffktsiqidlekyseqtefgitsdklllawremeqavelcgrenevkllvermmalqtdivDLQRSPMGRKQGGTLddleeqarelyrrlrEKPRDQRTEGDsqemvrlllqaiqsfekkvrviytqlsktvvckqkalellpkveevvslmnedektvvrlqekrqkelwnllkiacSKVRGPVSGSPDSMNASRLSQPGQLMSQPSTASNSLPEPAKKseelvaeahnlctllenaiqdtvreqdqsftaldwswlqteeeehscleqas
+> sp|O14920|IKKB_HUMAN_REM465 1-10, 576-586, 667-706, 744-756
+MSWSPSLTTQtcgawemkerlgtggfgnvirwhnqetgeqiaikqcrqelsprnrerwcleiqimrrlthpnvvaardvpegmqnlapndlpllameycqggdlrkylnqfenccglregailtllsdiasalrylhenriihrdlkpenivlqqgeqrlihkiidlgyakeldqgslctsfvgtlqylapelleqqkytvtvdywsfgtlafecitgfrpflpnwqpvqwhskvrqksevdivvsedlngtvkfssslpypnnlnsvlaerlekwlqlmlmwhprqrgtdptygpngcfkalddilnlklvhilnmvtgtihtypvtedeslqslkariqqdtgipeedqellqeaglalipdkpatqcisdgklneghtldmdlvflfdnskityetqisprpqpesvscilqepkrnlaffqlrkvwgqvwhsiqtlkedcnrlqqgqraammnllrnnsclskmknsmasmsqqlkakldffktsiqidlekyseqtefgitsdklllawremeqavelcgrenevkllvermmalqtdivdlqrspmgrkqggtlddleeqarelyrrlrEKPRDQRTEGDsqemvrlllqaiqsfekkvrviytqlsktvvckqkalellpkveevvslmnedektvvrlqekrqkelwnllkiacskvrGPVSGSPDSMNASRLSQPGQLMSQPSTASNSLPEPAKKSEelvaeahnlctllenaiqdtvreqdqsftaldwswlqTEEEEHSCLEQAS
+> sp|O14920|IKKB_HUMAN_HOTLOOPS 1-13, 46-55, 141-150, 251-263, 398-408, 495-504, 543-564, 574-588
+MSWSPSLTTQTCGawemkerlgtggfgnvirwhnqetgeqiaikqCRQELSPRNRerwcleiqimrrlthpnvvaardvpegmqnlapndlpllameycqggdlrkylnqfenccglregailtllsdiasalrylhenrIIHRDLKPENivlqqgeqrlihkiidlgyakeldqgslctsfvgtlqylapelleqqkytvtvdywsfgtlafecitgfrpflpnwqpvqwhskvrqksevdivvsedlnGTVKFSSSLPYPNnlnsvlaerlekwlqlmlmwhprqrgtdptygpngcfkalddilnlklvhilnmvtgtihtypvtedeslqslkariqqdtgipeedqellqeaglalipdkpatqcisdgklneghtldmdlvflfdnskityETQISPRPQPEsvscilqepkrnlaffqlrkvwgqvwhsiqtlkedcnrlqqgqraammnllrnnsclskmknsmasmsqqlkakldffktsiqidlEKYSEQTEFGitsdklllawremeqavelcgrenevkllvermmalqtDIVDLQRSPMGRKQGGTLDDLEeqarelyrrLREKPRDQRTEGDSQemvrlllqaiqsfekkvrviytqlsktvvckqkalellpkveevvslmnedektvvrlqekrqkelwnllkiacskvrgpvsgspdsmnasrlsqpgqlmsqpstasnslpepakkseelvaeahnlctllenaiqdtvreqdqsftaldwswlqteeeehscleqas
+

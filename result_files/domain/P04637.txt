@@ -1,0 +1,31 @@
+# pfam_scan.pl,  run at Tue May 29 10:15:34 2018
+#
+# Copyright (c) 2009 Genome Research Ltd
+# Freely distributed under the GNU 
+# General Public License
+#
+# Authors: Jaina Mistry (jaina@ebi.ac.uk), 
+#          Rob Finn (rdf@ebi.ac.uk)
+#
+# This is free software; you can redistribute it and/or modify it under
+# the terms of the GNU General Public License as published by the Free Software
+# Foundation; either version 2 of the License, or (at your option) any later version.
+# This program is distributed in the hope that it will be useful, but WITHOUT
+# ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+# FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
+# details.
+#
+# You should have received a copy of the GNU General Public License along with
+# this program. If not, see <http://www.gnu.org/licenses/>. 
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+#      query sequence file: ../sequences//P04637.fasta
+#        searching against: ../software/domain//Pfam-A.hmm, with cut off --cut_ga
+#    resolve clan overlaps: on
+#     predict active sites: off
+# = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+#
+# <seq id> <alignment start> <alignment end> <envelope start> <envelope end> <hmm acc> <hmm name> <type> <hmm start> <hmm end> <hmm length> <bit score> <E-value> <significance> <clan>
+
+sp|P04637|P53_HUMAN      5     29      5     29 PF08563.10  P53_TAD            Motif     1    25    25     44.5   6.3e-12   1 No_clan  
+sp|P04637|P53_HUMAN     95    288     95    289 PF00870.17  P53               Domain     1   195   196    382.3  3.8e-115   1 CL0073   
+sp|P04637|P53_HUMAN    319    357    319    358 PF07710.10  P53_tetramer       Motif     1    41    42     64.2   4.4e-18   1 No_clan  

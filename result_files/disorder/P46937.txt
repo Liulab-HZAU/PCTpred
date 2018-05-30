@@ -1,0 +1,15 @@
+ ____  _     _____ __  __ ____  _       _  _  _
+|  _ \(_)___| ____|  \/  | __ )| |     / || || |
+| | | | / __|  _| | |\/| |  _ \| |     | || || |_
+| |_| | \__ \ |___| |  | | |_) | |___  | ||__   _|
+|____/|_|___/_____|_|  |_|____/|_____| |_(_) |_|
+# Copyright (C) 2004 - Rune Linding & Lars Juhl Jensen 
+# EMBL Biocomputing Unit - Heidelberg - Germany        
+#
+> sp|P46937|YAP1_HUMAN_COILS 1-62, 72-187, 192-202, 210-244, 249-301, 333-344, 349-470
+MDPGQQPPPQPAPQGQGQPPSQPPQGQGPPSGPGQPAPAATQAAPQAPPAGHQIVHVRGDSEtdlealfnaVMNPKTANVPQTVPMRLRKLPDSFFKPPEPKSHSRQASTDAGTAGALTPQHVRAHSSPASLQLGAVSPGTLTPTGVVSGPAATPTAQHLRQSSFEIPDDVPLPAGWEMAKTSSGQRyflnHIDQTTTWQDPrkamlsqMNVTAPTSPPVQQNMMNSASGPLPDGWEQAMTQDGeiyyINHKNKTTSWLDPRLDPRFAMNQRISQSAPVKQPPPLAPQSPQGGVMGGSNSNqqqqmrlqqlqmekerlrlkqqellrqamrnINPSTANSPKCQelalRSQLPTLEQDGGTQNPVSSPGMSQELRTMTTNSSDPFLNSGTYHSRDESTDSGLSMSSYSVPRTPDDFLNSVDEMDTGDTINQSTLPSQQNRFPDYLEAIPGTNVDLGTLEGDGMNIEGEELmpslqealssdilndmesvlaatkldkesfltwl
+> sp|P46937|YAP1_HUMAN_REM465 1-50, 98-114, 275-309, 357-379, 392-406
+MDPGQQPPPQPAPQGQGQPPSQPPQGQGPPSGPGQPAPAATQAAPQAPPAghqivhvrgdsetdlealfnavmnpktanvpqtvpmrlrklpdsffkPPEPKSHSRQASTDAGTagaltpqhvrahsspaslqlgavspgtltptgvvsgpaatptaqhlrqssfeipddvplpagwemaktssgqryflnhidqtttwqdprkamlsqmnvtaptsppvqqnmmnsasgplpdgweqamtqdgeiyyinhknkttswldprldprfamnqrisQSAPVKQPPPLAPQSPQGGVMGGSNSNQQQQMRLQqlqmekerlrlkqqellrqamrninpstanspkcqelalrsqlptleQDGGTQNPVSSPGMSQELRTMTTnssdpflnsgtyHSRDESTDSGLSMSSysvprtpddflnsvdemdtgdtinqstlpsqqnrfpdyleaipgtnvdlgtlegdgmniegeelmpslqealssdilndmesvlaatkldkesfltwl
+> sp|P46937|YAP1_HUMAN_HOTLOOPS 73-85, 252-260, 275-285, 333-343, 429-439, 493-504
+mdpgqqpppqpapqgqgqppsqppqgqgppsgpgqpapaatqaapqappaghqivhvrgdsetdlealfnavMNPKTANVPQTVPmrlrklpdsffkppepkshsrqastdagtagaltpqhvrahsspaslqlgavspgtltptgvvsgpaatptaqhlrqssfeipddvplpagwemaktssgqryflnhidqtttwqdprkamlsqmnvtaptsppvqqnmmnsasgplpdgweqamtqdgeiyyinhKNKTTSWLDprldprfamnqrisQSAPVKQPPPLapqspqggvmggsnsnqqqqmrlqqlqmekerlrlkqqellrqamrnINPSTANSPKCqelalrsqlptleqdggtqnpvsspgmsqelrtmttnssdpflnsgtyhsrdestdsglsmssysvprtpddflnsvdemdtgdtINQSTLPSQQNrfpdyleaipgtnvdlgtlegdgmniegeelmpslqealssdilndmesvlaaTKLDKESFLTWL
+
