@@ -8,5 +8,9 @@ domain_real_path=${PCRpred_path}/software/domain
 export PATH=$PATH:${domain_real_path}/hmmer-3.1b2-linux-intel-x86_64/binaries
 export PERL5LIB=${domain_real_path}/PfamScan:$PERL5LIB
 
-#dp_indel
+#PSAIA
+
+psaia_real_path=${PCRpred_path}/software/PSAIA/PSAIA-1.0
+LD_LIBRARY_PATH=${psaia_real_path}
+export LD_LIBRARY_PATH
 

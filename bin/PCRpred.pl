@@ -8,13 +8,15 @@ use PDL;
 #=============================the path of software=============================
 
 my $software_NWalign_path = "../software/sequence_alignment/NWalign";
+
 #sequence
 my $software_domain_path = "../software/domain/PfamScan/pfam_scan.pl";
 my $software_disorder_path = "../software/disorder/DisEMBL-1.4/DisEMBL.py";
-my $software_sift_path = "/data4/hfliu/software/sift6.2.1";
+my $software_sift_path = "../software/sift6.2.1";
 my $software_sift_input_path = "../software/sift/input";
-my $software_polyphen_path = "/data4/hfliu/software/polyphen-2.2.2";
+my $software_polyphen_path = "../software/polyphen-2.2.2";
 my $software_polyphen_input_path = "../software/polyphen-2/input";
+
 #structure
 my $software_pocket_path = "../software/fpocket/fpocket2/bin/fpocket";
 my $software_dssp_path = "../software/dssp/dssp-2.0.4-linux-amd64";
@@ -24,8 +26,8 @@ my $software_hbplus_path = "../software/hbplus/hbplus";
 
 #=============================the path of databases=============================
 
-my $nr_database_path = "~/nr";
-my $uniref90_database_path = "~/uniref90";
+my $nr_database_path = "/the/path/of/nr";
+my $uniref90_database_path = "/the/path/of/uniref90";
 my $domain_pfam_path = "../software/domain/";
 #end
 
@@ -36,6 +38,7 @@ my $result_file = "../result_files";
 my $PDB_chain = "$result_file/PDB_chain";
 my $ca = "$result_file/PDB_chain/CA";
 my $seq2str_align = "$result_file/sequence_alignment";
+
 #sequence
 my $co_evolution = "$result_file/co-evolution";
 my $domain = "$result_file/domain";
@@ -43,6 +46,7 @@ my $disorder = "$result_file/disorder";
 my $shannon_entropy = "$result_file/shannon_entropy";
 my $sift = "$result_file/sift";
 my $polyphen = "$result_file/polyphen";
+
 #structure
 my $secondary_structure = "$result_file/secondary_structure";
 my $psaia = "$result_file/PSAIA";
@@ -119,6 +123,7 @@ my %aa_single = reverse%aa;
 if (scalar(keys%pdb_seq) ne 0) {
     foreach my $key(keys%pdb_seq) {
         my ($pdb_name,$pdb_chain) = split(/\s+/,$key);
+        
         #extract the chain from the PDB file and generate seqpdb file
         open(OUT,">","$PDB_chain/$pdb_name-$pdb_chain.pdb") or die "$!";
         open(IN,"<","$str_path/$pdb_name.pdb") or die "$!";
@@ -129,6 +134,7 @@ if (scalar(keys%pdb_seq) ne 0) {
         my $site;
         my %atom_num;
         my %num_resaa;
+        
         #check for multiple structural models
         foreach my $p(0..$#pdb) {
             if ($pdb[$p] =~ /^ENDMDL/) {
@@ -160,6 +166,7 @@ if (scalar(keys%pdb_seq) ne 0) {
             }
         }
         close OUT;
+        
         #generate seqpdb file
         my %seqpdb2pdb;
         my $seqnumber = 0;
@@ -171,8 +178,10 @@ if (scalar(keys%pdb_seq) ne 0) {
             $seqpdb2pdb{$seqnumber} = $kk;
         }
         close OUTS;
+        
         #sequence alignment by NWalign
         system "$software_NWalign_path $seq_path/$pdb_seq{$key}.fasta $seq2str_align/$pdb_name-$pdb_chain.fasta > $seq2str_align/$pdb_seq{$key}-$pdb_name-$pdb_chain.txt";
+        
         #mapping sequence site to PDB site
         my %seq2str;
         open(IN,"<","$seq2str_align/$pdb_seq{$key}-$pdb_name-$pdb_chain.txt") or die "$!";
@@ -215,6 +224,7 @@ if (scalar(keys%pdb_seq) ne 0) {
                 $seq2str{$n1} = $seqpdb2pdb{$n2};
             }
         }
+        
         #check whether both sites are in the PDB
         foreach my $kk(@{$pdb_site{$key}}) {
             my @tem = split(/\s+/,$kk);
@@ -258,23 +268,29 @@ foreach my $key(keys%unique_seq) {
 #end
 
 #=============================calculate sequence features=============================
-=cut
+
 foreach my $key(keys%unique_seq) {
+    
     #run psi-blast to generate MSA
     system "psiblast -evalue 0.001 -line_length 10000 -num_alignments 5000 -num_iterations 1 -num_threads 4 -query $seq_path/$key.fasta -db $nr_database_path/nr -outfmt 4 -out $co_evolution/$key.psiblast";
     &generate_MSA("$co_evolution/$key.psiblast");
+    
     #calculate co-evolution
     open(OU,">","./new_protein.txt") or die "$!";
     print OU"$key\n";
     close OU;
     system "matlab matlab -nojvm -nodisplay -nosplash -nodesktop < DI.m >running.log 2>running.err";
     &zscore("$co_evolution/$key.txt",5);
+    
     #calculates the disorder
     system "python $software_disorder_path 8 8 4 1.2 1.4 1.2 $seq_path/$key.fasta > $disorder/$key.txt";
+    
     #calculate domain
     system"perl $software_domain_path -fasta $seq_path/$key.fasta -dir $domain_pfam_path -outfile $domain/$key.txt";
+    
     #run psi-blast to generate PSSM
     system "psiblast -evalue 0.001 -num_iterations 3 -num_threads 4 -query $seq_path/$key.fasta -db $nr_database_path/nr -out_ascii_pssm $shannon_entropy/$key.pssm";
+    
     #calculate shannon entropy
     my @blosums = ();
     my %hash_blosum = ();
@@ -308,6 +324,7 @@ foreach my $key(keys%unique_seq) {
         print OUT $seq_num[$i],"\t",$aa_key[$i],"\t",$sen[$i],"\n";
     }
     close OUT;
+    
     #calculate predicted probability of pathogenic/ SIFT prediction and PolyPhen-2 prediction
     #generate input file
     open(OUT,">","$software_sift_input_path/$key.subst") or die "$!";
@@ -337,9 +354,11 @@ foreach my $key(keys%unique_seq) {
     }
     close OUT;
     close OUTT;
+    
     #run SIFT 
     system "$software_sift_path/bin/SIFT_for_submitting_fasta_seq.csh $seq_path/$key.fasta $uniref90_database_path/uniref90 $software_sift_input_path/$key.subst";
     move("$software_sift_path/tmp/$key.SIFTprediction", "$sift/$key.SIFTprediction");
+    
     #run PolyPhen-2
     system "$software_polyphen_path/bin/run_pph.pl -s $seq_path/$key.fasta $software_polyphen_input_path/$key.txt 1>$polyphen/$key.output 2>$polyphen/$key.log";
     system "$software_polyphen_path/bin/run_weka.pl $polyphen/$key.output > $polyphen/$key.humdiv.output";
@@ -353,25 +372,31 @@ if (scalar(keys%pdb_avail_site) ne 0) {
     foreach my $key(keys%pdb_avail_site) {
         my ($pdb_name,$pdb_chain) = split(/\s+/,$key);
         print PPLI"$PDB_chain/$pdb_name-$pdb_chain.pdb\n";
+        
         #calculates the pocket region
         system "$software_pocket_path -f $PDB_chain/$pdb_name-$pdb_chain.pdb";
+        
         #calculates the secondary structure
         system "$software_dssp_path -i $PDB_chain/$pdb_name-$pdb_chain.pdb -o $secondary_structure/$pdb_name-$pdb_chain.dssp";
         &secondary_structure_type("$secondary_structure/$pdb_name-$pdb_chain.dssp");
+        
         #calculates the hydrogen bonds
         system "$software_hbplus_path/hbplus $PDB_chain/$pdb_name-$pdb_chain.pdb";
         move("$pdb_name-$pdb_chain.hb2", "$hbplus/$pdb_name-$pdb_chain.hb2");
         &hbplus("$hbplus/$pdb_name-$pdb_chain.hb2");
+        
         #calculates laplacian norm and bfactor
         &laplacian_norm("$PDB_chain/$pdb_name-$pdb_chain.pdb",$laplacian_norm,"$pdb_name-$pdb_chain",$bfactor,$ca);
         &zscore("$laplacian_norm/$pdb_name-$pdb_chain.txt",1);
         &zscore("$bfactor/$pdb_name-$pdb_chain.txt",1);
+        
         #calculates topological features
         &residues_interaction_network("$PDB_chain/$pdb_name-$pdb_chain.pdb",$residue_network,"$pdb_name-$pdb_chain");
         system "python topological_features.py -net $residue_network/$pdb_name-$pdb_chain.txt -o $topological_features/$pdb_name-$pdb_chain.txt";
         &zscore_and_logistic("$topological_features/$pdb_name-$pdb_chain.txt",1);
     }
     close PPLI;
+    
     #calculates the depth and protrusion index
     system "$software_psaia_path/psa $software_psaia_path/psa.cfg $software_psaia_path/pdblist.txt";
     opendir(DIR,"$software_psaia_path") or die "$!";
@@ -395,6 +420,7 @@ foreach my $key(keys%unique_seq) {
         print FFP "$tem[0]_$tem[1]$tem[2]_$tem[3]$tem[4]\t";
         my $seq_distance = abs($tem[2] - $tem[4]);
         print FFP "$seq_distance\t";
+        
         #co-evolution
         my $small;my $big;
         if ($tem[2] > $tem[4]) {
@@ -414,9 +440,11 @@ foreach my $key(keys%unique_seq) {
             }
         }
         close IN;
+        
         #correlated mutation
         my ($target,$nontarget,$other) = &CM("$co_evolution/$key.msa",$kk);
         printf FFP "%0.4f\t%0.4f\t%0.4f\t",$target,$nontarget,$other;
+        
         #domain
         open(IN,"<","$domain/$key.txt") or die "$!";
         chomp(my @domain = <IN>);
@@ -429,6 +457,7 @@ foreach my $key(keys%unique_seq) {
             } 
         }
         print FFP "$domain_o1\t";
+        
         #disorder
         open(IN,"<","$disorder/$key.txt") or die "$!";
         chomp(my @disorder = <IN>);
@@ -455,6 +484,7 @@ foreach my $key(keys%unique_seq) {
         }else{
             print FFP "0\t";
         }
+       
         #sift
         my %sift_score;
         open(IN,"<","$sift/$key.SIFTprediction") or die "$!";
@@ -473,6 +503,7 @@ foreach my $key(keys%unique_seq) {
         }else{
             print FFP "$sift_score{$tem[2]}\t$sift_score{$tem[4]}\t$sift_aver\t";
         }
+       
         #shannon entropy
         my %se_score;
         open(IN,"<","$shannon_entropy/$key.txt") or die "$!";
@@ -488,6 +519,7 @@ foreach my $key(keys%unique_seq) {
         }else{
             print FFP "$se_score{$tem[2]}\t$se_score{$tem[4]}\t$se_aver\t";
         }
+        
         #polyphen-2
         my %polyphen_score;
         open(IN,"<","$polyphen/$key.humdiv.output") or die "$!";
@@ -520,6 +552,7 @@ if (scalar(keys%pdb_avail_site) ne 0) {
             print FFS "$tem[0]_$tem[1]$tem[2]_$tem[3]$tem[4]\t";
             my $str_site1 = $tem[-1];
             my $str_site2 = $tem[-2];
+            
             #structure distance
             my @two_coor;
             open(IN,"<","$ca/$pdb_name-$pdb_chain.pdb") or die "$!";
@@ -539,6 +572,7 @@ if (scalar(keys%pdb_avail_site) ne 0) {
             close IN;
             my $distance3d = sqrt(($two_coor[0] - $two_coor[3])**2 + ($two_coor[1] - $two_coor[4])**2 + ($two_coor[2] - $two_coor[5])**2);
             printf FFS "%0.4f\t",$distance3d;
+            
             #the shortest path
             open(IN,"<","$residue_network/$pdb_name-$pdb_chain.txt") or die "$!";
             chomp(my @resnet = <IN>);
@@ -551,6 +585,7 @@ if (scalar(keys%pdb_avail_site) ne 0) {
                 $step++;
             }
             print FFS "$step\t";
+            
             #pocket
             opendir(DIR,"$PDB_chain/$pdb_name-$pdb_chain"."_out/pockets");
             my @dir =readdir(DIR);
@@ -585,6 +620,7 @@ if (scalar(keys%pdb_avail_site) ne 0) {
                 }
                 print FFS "$same_pocket\t";
             }
+            
             #secondary structure
             my %secondary_type;
             open(IN,"<","$secondary_structure/$pdb_name-$pdb_chain.dssp.type") or die "$!";
@@ -609,6 +645,7 @@ if (scalar(keys%pdb_avail_site) ne 0) {
             foreach my $i(sort{$a cmp $b}keys%hash) {
                 print FFS "$hash{$i}\t";
             }
+            
             #depth and protrusion index
             my @dp_score;my @cx_score;
             open(IN,"<","$dp_index/$pdb_name-$pdb_chain.txt") or die "$!";
@@ -633,6 +670,7 @@ if (scalar(keys%pdb_avail_site) ne 0) {
                 print FFS "$d\t";
             }
             print FFS "$cx_aver\t";
+            
             #topological feature
             my @tp_score;
             open(IN,"<","$topological_features/$pdb_name-$pdb_chain.txt.normalization") or die "$!";
@@ -655,6 +693,7 @@ if (scalar(keys%pdb_avail_site) ne 0) {
                 my $dpaver = ($tp_score[$i] + $tp_score[$i+4])/2;
                 print FFS"$dpaver\t";
             }
+            
             #laplacian norm
             my @laplacian_score;
             open(IN,"<","$laplacian_norm/$pdb_name-$pdb_chain.txt.normalization") or die "$!";
@@ -677,6 +716,7 @@ if (scalar(keys%pdb_avail_site) ne 0) {
                 my $laaver = ($laplacian_score[$i] + $laplacian_score[$i+5])/2;
                 print FFS"$laaver\t";
             }
+            
             #bfactor
             my @bfactor_score;
             open(IN,"<","$bfactor/$pdb_name-$pdb_chain.txt.normalization") or die "$!";
@@ -694,6 +734,7 @@ if (scalar(keys%pdb_avail_site) ne 0) {
             }else{
                 print FFS "$bfactor_score[1]\t$bfactor_score[0]\t$bfactor_aver\t";
             }
+            
             #hydrogen bonds
             my %hb_score;
             $hb_score{$str_site1} = 0;
@@ -721,7 +762,7 @@ if (scalar(keys%pdb_avail_site) ne 0) {
     }
     close FFS;
 }
-=cut
+
 #====================PTM cross-talk prediction/sequence and structure====================
 
 my $predict_sample = "$out_path";
@@ -749,6 +790,7 @@ unlink "new_protein.txt";
 unlink "hbdebug.dat";
 
 #====================PTM cross-talk pairs prediction based on sequence features====================
+
 sub SEQSET{
     open(IN,"<","$model_path/negative_seq_list.txt") or die "$!";
     my %hash_neg;
@@ -784,6 +826,7 @@ sub SEQSET{
         close OUT; 
     }
 }
+
 sub SEQFeature{
     my %feature;
     open(FF,"<","$model_path/positive_sequence_features.txt") or die "$!";
@@ -840,6 +883,7 @@ sub SEQFeature{
         close OUT;
     } 
 }
+
 sub SEQRF_python{
     foreach my $i(1..100) {
         system "python python_RF.py -train $seqtest_path/train$i.txt -test $seqtest_path/test.txt -o $seqtest_path/$i"."_out.txt";
@@ -847,6 +891,7 @@ sub SEQRF_python{
 }
 
 #=======================PTM cross-talk pairs prediction based on structural features==================
+
 sub STRSET{
     open(IN,"<","$model_path/negative_str_list.txt") or die "$!";
     my %hash_neg;
@@ -882,6 +927,7 @@ sub STRSET{
         close OUT; 
     }
 }
+
 sub STRFeature{
     my %feature;
     open(FF,"<","$model_path/positive_strutural_features.txt") or die "$!";
@@ -938,6 +984,7 @@ sub STRFeature{
         close OUT;
     } 
 }
+
 sub STRRF_python{
     foreach my $i(1..100) {
         system "python python_RF.py -train $strtest_path/train$i.txt -test $strtest_path/test.txt -o $strtest_path/$i"."_out.txt";
@@ -945,6 +992,7 @@ sub STRRF_python{
 }
 
 #====================================probability of prediction======================================
+
 sub performance{
     my %seq_pro;
     open(IN,"<","$seqtest_path/test.txt") or die "$!";

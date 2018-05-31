@@ -4,7 +4,7 @@
 #including calculation of NWalign, co-evolution, disorder, domain, pocket,
 #secondary structure, depth and protrusion index.
 
-cd softwares
+cd software
 #==========================download softwares========================
 #NWalign
 wget https://zhanglab.ccmb.med.umich.edu/NW-align/NWalign.gz
@@ -116,7 +116,7 @@ mv libpng12.so.0 ./PSAIA-1.0/
 cd PSAIA-1.0/
 dp_path=$(readlink -f .)
 dp_path1=${dp_path//\//\\/}
-sed -i "s/\/data4\/hfliu\/PTMpretool\/software\/PSAIA\/PSAIA-1.0/$dp_path1/g" psa.cfg
+sed -i "s/\/PATH/$dp_path1/g" psa.cfg
 cd ../../
 
 #==================================end===============================

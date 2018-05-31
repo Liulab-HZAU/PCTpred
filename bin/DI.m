@@ -1,4 +1,4 @@
-addpath(genpath('../softwares/calculate_evolutionary_constraints_v2.0'))
+addpath(genpath('../software/calculate_evolutionary_constraints_v2.0'))
 [ex] = textread('new_protein.txt','%s');
 for i = 1:1
     a = ex{i};
