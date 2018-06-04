@@ -11,6 +11,12 @@ PCRpred (**P**TM **CR**oss-talk **pred**ictor) is a computational method that ca
 * Matlab  ( >= R2014a )
 * GCC ( >= 5.3.0 )
 
+### Download
+
+```shell
+git clone https://github.com/Liulab-HZAU/PCRpred.git
+```
+
 ### User installation
 
 To install PRCpred, you need to conduct the installation of some third-party software, including BLAST+, EVfold, DisEMBL, HMMER, SIFT, PolyPhen-2, Fpocket2, DSSP, PSAIA, and HBPLUS.
