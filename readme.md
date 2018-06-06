@@ -108,5 +108,5 @@ O14920	S	177	K	163	NA	NA	prediction_score	0.867
 
 ### Citation
 
-* Hui-Fang Liu, Jun Sun, and Rong Liu. Structure-based prediction of post-translational modification cross-talk within proteins using complementary residue- and residue pair-based features. (submitted)
+* Hui-Fang Liu and Rong Liu. Structure-based prediction of post-translational modification cross-talk within proteins using complementary residue- and residue pair-based features. (submitted)
 
