@@ -1,4 +1,4 @@
-1. prefile.txt is an example for input to PCRpred.pl
+1. prefile.txt is an example for input to PCTpred.pl
 
 Uniprot_ID	Residue1	Site1	Residue2	Site2	PDB_ID	PDB_Chain
 P84243	T	12	K	10	2l43	A
