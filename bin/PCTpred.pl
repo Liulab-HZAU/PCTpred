@@ -363,7 +363,7 @@ foreach my $key(keys%unique_seq) {
     system "$software_polyphen_path/bin/run_pph.pl -s $seq_path/$key.fasta $software_polyphen_input_path/$key.txt 1>$polyphen/$key.output 2>$polyphen/$key.log";
     system "$software_polyphen_path/bin/run_weka.pl $polyphen/$key.output > $polyphen/$key.humdiv.output";
 }
-
+#end
 
 #=============================calculate structural features=============================
 
@@ -410,6 +410,7 @@ if (scalar(keys%pdb_avail_site) ne 0) {
         }
     }
 }
+#end
 
 #=============================SEQ FEATURE=============================
 
