@@ -1,0 +1,206 @@
+#Protein_name	Uniprot_ID	Site1	PTM1	Site2	PTM2	Relationship (PTM1 to PTM2)	PDB	Method	Resolution	Sequence_distance	Structural_distance	Pubmed_ID
+IKKB	O14920	S177	ubiquitination	K163	phosphorylation	NA	NA	NA	14	NA
+IKKB	O14920	S181	ubiquitination	K163	phosphorylation	4KIK_A	X-RAY DIFFRACTION	2.83	18	25.1357
+FoxO3	O43524	R248	methylation	S253	phosphorylation	2UZK_A	X-RAY DIFFRACTION	2.7	5	14.9087
+FoxO3	O43524	R250	methylation	S253	phosphorylation	2UZK_A	X-RAY DIFFRACTION	2.7	3	8.6206
+PIP5K1C	O60331	Y649	phosphorylation	S650	phosphorylation	3H1Z_P	X-RAY DIFFRACTION	1.83	1	3.8097
+ULK1	O75385	S638	phosphorylation	S758	phosphorylation	NA	NA	NA	120	NA
+RIG-I	O95786	T170	phosphorylation	K172	ubiquitination	4NQK_A	X-RAY DIFFRACTION	3.70	2	5.3533
+c-Fos	P01100	S362	phosphorylation	T325	phosphorylation	NA	NA	NA	37	NA
+c-Fos	P01100	S362	phosphorylation	T331	phosphorylation	NA	NA	NA	31	NA
+c-Fos	P01100	S374	phosphorylation	T325	phosphorylation	NA	NA	NA	49	NA
+c-Fos	P01100	S374	phosphorylation	T331	phosphorylation	NA	NA	NA	43	NA
+c-Fos	P01100	T232	phosphorylation	K265	SUMOylation	NA	NA	NA	33	NA
+Myc	P01106	S62	phosphorylation	T58	phosphorylation	1MV0_A	SOLUTION NMR	NOT	4	11.3025
+ER-alpha	P03372	K303	acetylation	K302	methylation	3Q95_B	X-RAY DIFFRACTION	2.05	1	3.7983
+ER-alpha	P03372	S106	phosphorylation	S104	phosphorylation	NA	NA	NA	2	NA
+ER-alpha	P03372	S118	phosphorylation	S104	phosphorylation	NA	NA	NA	14	NA
+ER-alpha	P03372	S118	phosphorylation	S106	phosphorylation	NA	NA	NA	12	NA
+ER-alpha	P03372	S294	phosphorylation	S118	phosphorylation	NA	NA	NA	176	NA
+ER-alpha	P03372	S294	phosphorylation	S167	phosphorylation	NA	NA	NA	127	NA
+ER-alpha	P03372	S294	phosphorylation	S341	phosphorylation	NA	NA	NA	47	NA
+ER-alpha	P03372	S305	acetylation	K303	phosphorylation	1QKU_A	X-RAY DIFFRACTION	3.2	2	6.5926
+ER-alpha	P03372	S305	phosphorylation	S118	phosphorylation	NA	NA	NA	187	NA
+ANXA1	P04083	Y21	phosphorylation	K257	SUMOylation	NA	NA	NA	236	NA
+p53	P04637	K372	methylation	K370	methylation	1DT7_Y	SOLUTION NMR	NOT	2	5.4585
+p53	P04637	K372	methylation	K373	acetylation	1DT7_Y	SOLUTION NMR	NOT	1	3.8294
+p53	P04637	K372	methylation	K382	acetylation	1DT7_X	SOLUTION NMR	NOT	10	14.6085
+p53	P04637	S149	O-GlcNAcylation	T155	phosphorylation	3Q05_C	X-RAY DIFFRACTION	2.40	6	12.7028
+p53	P04637	S15	phosphorylation	T18	phosphorylation	5HOU_A	SOLUTION NMR	NOT	3	5.2422
+p53	P04637	S20	phosphorylation	K382	acetylation	NA	NA	NA	362	NA
+p53	P04637	S20	phosphorylation	K386	SUMOylation	NA	NA	NA	366	NA
+p53	P04637	S215	phosphorylation	S33	phosphorylation	NA	NA	NA	182	NA
+p53	P04637	S215	phosphorylation	S392	phosphorylation	NA	NA	NA	177	NA
+p53	P04637	S366	phosphorylation	K373	acetylation	2MWO_B	SOLUTION NMR	NOT	7	15.4544
+p53	P04637	S366	phosphorylation	K382	acetylation	NA	NA	NA	16	NA
+p53	P04637	S378	phosphorylation	K373	acetylation	1DT7_Y	SOLUTION NMR	NOT	5	8.0971
+p53	P04637	S378	phosphorylation	K382	acetylation	1DT7_X	SOLUTION NMR	NOT	4	7.1165
+p53	P04637	S37	phosphorylation	K382	acetylation	NA	NA	NA	345	NA
+p53	P04637	S37	phosphorylation	S15	phosphorylation	5HOU_A	SOLUTION NMR	NOT	22	25.5851
+p53	P04637	S37	phosphorylation	S33	phosphorylation	5HOU_A	SOLUTION NMR	NOT	4	11.6526
+p53	P04637	S37	phosphorylation	S46	phosphorylation	5HOU_A	SOLUTION NMR	NOT	9	21.1731
+p53	P04637	S46	phosphorylation	K382	acetylation	NA	NA	NA	336	NA
+p53	P04637	T18	phosphorylation	S20	phosphorylation	5HOU_A	SOLUTION NMR	NOT	2	5.4470
+p53	P04637	T377	phosphorylation	K373	acetylation	1DT7_Y	SOLUTION NMR	NOT	4	9.9511
+p53	P04637	T377	phosphorylation	K382	acetylation	1DT7_Y	SOLUTION NMR	NOT	5	9.7752
+p53	P04637	T387	phosphorylation	K373	acetylation	1DT7_X	SOLUTION NMR	NOT	14	20.1222
+p53	P04637	T387	phosphorylation	K382	acetylation	1DT7_Y	SOLUTION NMR	NOT	5	9.9488
+ITGB3	P05106	Y773	phosphorylation	Y785	phosphorylation	2KNC_B	SOLUTION NMR	NOT	12	23.7370
+c-Jun	P05412	S243	phosphorylation	T239	phosphorylation	NA	NA	NA	4	NA
+c-Jun	P05412	S63	phosphorylation	K226	SUMOylation	NA	NA	NA	163	NA
+c-Jun	P05412	S73	phosphorylation	K226	SUMOylation	NA	NA	NA	153	NA
+INSR	P06213	Y1185	phosphorylation	Y1189	phosphorylation	5HHW_A	X-RAY DIFFRACTION	1.79	4	8.5721
+Rb	P06400	K810	methylation	S807	phosphorylation	NA	NA	NA	3	NA
+Rb	P06400	K810	methylation	S811	phosphorylation	NA	NA	NA	1	NA
+PR	P06401	S294	phosphorylation	K388	SUMOylation	NA	NA	NA	94	NA
+Lyn	P07948	Y316	phosphorylation	Y508	phosphorylation	NA	NA	NA	192	NA
+SP1	P08047	T739	SUMOylation	K16	phosphorylation	NA	NA	NA	723	NA
+Vimentin	P08670	S55	phosphorylation	S83	phosphorylation	NA	NA	NA	28	NA
+AR	P10275	S516	phosphorylation	S651	phosphorylation	NA	NA	NA	135	NA
+AR	P10275	S579	phosphorylation	S516	phosphorylation	NA	NA	NA	63	NA
+plakoglobin	P14923	Y644	phosphorylation	Y550	phosphorylation	3IFQ_A	X-RAY DIFFRACTION	2.80	94	35.0109
+GATA-1	P15976	S142	phosphorylation	K137	SUMOylation	NA	NA	NA	5	NA
+H2AX	P16104	Y143	phosphorylation	S140	phosphorylation	NA	NA	NA	3	NA
+C/EBP-beta	P17676	T235	phosphorylation	R3	methylation	NA	NA	NA	232	NA
+NFKB1	P19838	S927	phosphorylation	S932	phosphorylation	NA	NA	NA	5	NA
+CCNE1	P24864	T395	phosphorylation	S399	phosphorylation	NA	NA	NA	4	NA
+RNAPII	P24928	S1805	phosphorylation	R1810	methylation	NA	NA	NA	5	NA
+RNAPII	P24928	S1807	phosphorylation	R1810	methylation	NA	NA	NA	3	NA
+APC	P25054	S1501	phosphorylation	S1504	phosphorylation	NA	NA	NA	3	NA
+APC	P25054	S1501	phosphorylation	S1507	phosphorylation	NA	NA	NA	6	NA
+APC	P25054	S1505	phosphorylation	S1501	phosphorylation	NA	NA	NA	4	NA
+APC	P25054	S1507	phosphorylation	S1503	phosphorylation	NA	NA	NA	4	NA
+APC	P25054	S1507	phosphorylation	S1510	phosphorylation	NA	NA	NA	3	NA
+YY1	P25490	S180	phosphorylation	K178	acetylation	NA	NA	NA	2	NA
+YY1	P25490	S180	phosphorylation	K179	acetylation	NA	NA	NA	1	NA
+YY1	P25490	S184	phosphorylation	K182	acetylation	NA	NA	NA	2	NA
+YY1	P25490	S184	phosphorylation	K183	acetylation	NA	NA	NA	1	NA
+NFKBIA	P25963	S32	phosphorylation	S36	phosphorylation	NA	NA	NA	4	NA
+DNMT1	P26358	K142	methylation	S143	phosphorylation	NA	NA	NA	1	NA
+PML	P29590	K160	SUMOylation	K380	ubiquitination	NA	NA	NA	220	NA
+PML	P29590	K160	SUMOylation	K400	ubiquitination	NA	NA	NA	240	NA
+PML	P29590	K160	SUMOylation	K401	ubiquitination	NA	NA	NA	241	NA
+PML	P29590	K160	SUMOylation	K476	ubiquitination	NA	NA	NA	316	NA
+CDC25B	P30305	S321	phosphorylation	S323	phosphorylation	NA	NA	NA	2	NA
+CDC25C	P30307	S214	phosphorylation	S216	phosphorylation	NA	NA	NA	2	NA
+CDC25C	P30307	T130	phosphorylation	S198	phosphorylation	NA	NA	NA	68	NA
+CDC25C	P30307	T67	phosphorylation	S216	phosphorylation	NA	NA	NA	149	NA
+Akt1	P31749	T305	O-GlcNAcylation	T308	phosphorylation	NA	NA	NA	3	NA
+Akt1	P31749	T312	O-GlcNAcylation	T308	phosphorylation	4EJN_A	X-RAY DIFFRACTION	2.19	4	11.3046
+CTNNB1	P35222	S37	phosphorylation	S33	phosphorylation	3FQN_C	X-RAY DIFFRACTION	1.65	4	11.3760
+CTNNB1	P35222	S45	phosphorylation	T41	phosphorylation	NA	NA	NA	4	NA
+CTNNB1	P35222	T41	phosphorylation	S37	phosphorylation	NA	NA	NA	4	NA
+SREBP-1	P36956	S434	phosphorylation	S430	phosphorylation	NA	NA	NA	4	NA
+SREBP-1	P36956	S434	phosphorylation	T426	phosphorylation	NA	NA	NA	8	NA
+SREBP-1	P36956	T426	phosphorylation	S430	phosphorylation	NA	NA	NA	4	NA
+PPAR-gamma	P37231	S112	phosphorylation	K107	SUMOylation	NA	NA	NA	5	NA
+SNCA	P37840	K12	ubiquitination	S129	phosphorylation	2N0A_B	SOLID-STATE NMR	NOT	117	121.5912
+SNCA	P37840	K12	ubiquitination	Y125	phosphorylation	2N0A_E	SOLID-STATE NMR	NOT	113	115.2249
+FEN1	P39748	R192	methylation	S187	phosphorylation	1UL1_Z	X-RAY DIFFRACTION	2.90	5	12.6965
+HNF4-alpha	P41235	Y23	phosphorylation	Y286	phosphorylation	NA	NA	NA	263	NA
+HNF4-alpha	P41235	Y23	phosphorylation	Y288	phosphorylation	NA	NA	NA	265	NA
+STAT1	P42224	K703	SUMOylation	Y701	phosphorylation	NA	NA	NA	2	NA
+STAT1	P42224	R31	methylation	Y701	phosphorylation	NA	NA	NA	670	NA
+STAT6	P42226	R27	methylation	Y641	phosphorylation	NA	NA	NA	614	NA
+PEA3	P43268	S101	phosphorylation	K96	SUMOylation	NA	NA	NA	5	NA
+p27Kip1	P46527	S2	O-GlcNAcylation	S10	phosphorylation	NA	NA	NA	8	NA
+YAP1	P46937	S397	phosphorylation	S400	phosphorylation	NA	NA	NA	3	NA
+YAP1	P46937	S397	phosphorylation	S403	phosphorylation	NA	NA	NA	6	NA
+IFNAR2	P48551	S364	phosphorylation	K399	acetylation	NA	NA	NA	35	NA
+IFNAR2	P48551	S384	phosphorylation	K399	acetylation	NA	NA	NA	15	NA
+H4	P62805	K13	acetylation	R4	methylation	2KWO_B	SOLUTION NMR	NOT	9	14.9215
+H4	P62805	K17	acetylation	R4	methylation	2KWO_B	SOLUTION NMR	NOT	13	12.3431
+H4	P62805	K21	acetylation	K17	methylation	5JA4_B	X-RAY DIFFRACTION	2.42	4	12.1717
+H4	P62805	K21	methylation	R4	methylation	2KWO_B	SOLUTION NMR	NOT	17	4.5633
+H4	P62805	K6	acetylation	R4	methylation	2KWO_B	SOLUTION NMR	NOT	2	6.9161
+H4	P62805	K9	acetylation	R4	methylation	2KWO_B	SOLUTION NMR	NOT	5	10.7739
+H2B	P62807	K35	ubiquitination	K121	ubiquitination	5KGF_D	ELECTRON MICROSCOPY	4.54	86	30.7802
+H2B	P62807	S113	O-GlcNAcylation	K121	ubiquitination	5KGF_D	ELECTRON MICROSCOPY	4.54	8	12.0325
+YB-1	P67809	S102	phosphorylation	T126	O-GlcNAcylation	1H95_A	SOLUTION NMR	NOT	24	13.9830
+CK2A1	P68400	S347	O-GlcNAcylation	T344	phosphorylation	3PE4_B	X-RAY DIFFRACTION	1.95	3	10.1852
+SMAD3	P84022	S204	phosphorylation	T179	phosphorylation	NA	NA	NA	25	NA
+SMAD3	P84022	S208	phosphorylation	S204	phosphorylation	NA	NA	NA	4	NA
+SMAD3	P84022	S208	phosphorylation	T179	phosphorylation	NA	NA	NA	29	NA
+H3	P84243	K10	methylation	K15	acetylation	4GU0_E	X-RAY DIFFRACTION	3.10	5	12.0790
+H3	P84243	K10	methylation	K19	acetylation	4GU0_F	X-RAY DIFFRACTION	3.10	9	20.3695
+H3	P84243	K10	methylation	K24	acetylation	4GU0_E	X-RAY DIFFRACTION	3.10	14	34.7190
+H3	P84243	K10	methylation	K28	methylation	NA	NA	NA	18	NA
+H3	P84243	K10	acetylation	K5	methylation	2L43_A	SOLUTION NMR	NOT	5	16.7905
+H3	P84243	K15	acetylation	K5	methylation	NA	NA	NA	10	NA
+H3	P84243	K19	acetylation	R18	methylation	4GU0_F	X-RAY DIFFRACTION	3.10	1	3.7790
+H3	P84243	K24	acetylation	R18	methylation	4GU0_E	X-RAY DIFFRACTION	3.10	6	19.5104
+H3	P84243	K28	methylation	K37	methylation	NA	NA	NA	9	NA
+H3	P84243	K28	methylation	S29	phosphorylation	NA	NA	NA	1	NA
+H3	P84243	K5	methylation	K19	methylation	NA	NA	NA	14	NA
+H3	P84243	K5	methylation	K24	acetylation	NA	NA	NA	19	NA
+H3	P84243	K5	methylation	K28	acetylation	NA	NA	NA	23	NA
+H3	P84243	K5	methylation	K37	methylation	NA	NA	NA	32	NA
+H3	P84243	K5	methylation	K80	methylation	NA	NA	NA	75	NA
+H3	P84243	R18	methylation	K5	methylation	NA	NA	NA	13	NA
+H3	P84243	R3	methylation	K5	methylation	2L43_A	SOLUTION NMR	NOT	2	6.7045
+H3	P84243	R9	methylation	K10	methylation	2L43_A	SOLUTION NMR	NOT	1	3.8181
+H3	P84243	S11	phosphorylation	K10	methylation	2L43_A	SOLUTION NMR	NOT	1	3.8213
+H3	P84243	S11	phosphorylation	K15	acetylation	4GU0_E	X-RAY DIFFRACTION	3.10	4	9.5960
+H3	P84243	T12	phosphorylation	K10	methylation	2L43_A	SOLUTION NMR	NOT	2	5.4311
+H3	P84243	T7	phosphorylation	K5	methylation	2L43_A	SOLUTION NMR	NOT	2	6.7930
+HSF1	Q00613	S303	phosphorylation	K298	SUMOylation	NA	NA	NA	5	NA
+E2F1	Q01094	K185	methylation	K117	acetylation	NA	NA	NA	68	NA
+E2F1	Q01094	K185	methylation	K120	acetylation	NA	NA	NA	65	NA
+E2F1	Q01094	K185	methylation	K125	acetylation	NA	NA	NA	60	NA
+E2F1	Q01094	K185	methylation	S31	phosphorylation	NA	NA	NA	154	NA
+E2F1	Q01094	K185	methylation	S364	phosphorylation	NA	NA	NA	179	NA
+MEF2A	Q02078	S408	phosphorylation	K403	SUMOylation	NA	NA	NA	5	NA
+NFkB-p65	Q04206	K310	acetylation	K314	methylation	1NFI_C	X-RAY DIFFRACTION	2.70	4	6.5712
+NFkB-p65	Q04206	K310	acetylation	K315	methylation	1NFI_C	X-RAY DIFFRACTION	2.70	5	8.6320
+NFkB-p65	Q04206	S276	phosphorylation	K310	acetylation	1NFI_C	X-RAY DIFFRACTION	2.70	34	64.1601
+NFkB-p65	Q04206	S311	methylation	K310	phosphorylation	1NFI_C	X-RAY DIFFRACTION	2.70	1	3.7934
+NFkB-p65	Q04206	S536	phosphorylation	K310	acetylation	NA	NA	NA	226	NA
+NFkB-p65	Q04206	T305	O-GlcNAcylation	K310	acetylation	1NFI_C	X-RAY DIFFRACTION	2.70	5	8.0012
+GRIN1	Q05586	S896	phosphorylation	S897	phosphorylation	NA	NA	NA	1	NA
+MEF2C	Q06413	S396	phosphorylation	K391	SUMOylation	NA	NA	NA	5	NA
+FoxO1	Q12778	R251	methylation	S256	phosphorylation	NA	NA	NA	5	NA
+FoxO1	Q12778	R253	methylation	S256	phosphorylation	NA	NA	NA	3	NA
+FoxO1	Q12778	S249	phosphorylation	S256	phosphorylation	NA	NA	NA	7	NA
+FoxO1	Q12778	S319	phosphorylation	S322	phosphorylation	NA	NA	NA	3	NA
+FoxO1	Q12778	S319	phosphorylation	S325	phosphorylation	NA	NA	NA	6	NA
+TFCP2	Q12800	T329	phosphorylation	S291	phosphorylation	NA	NA	NA	38	NA
+TFCP2	Q12800	T329	phosphorylation	S309	phosphorylation	NA	NA	NA	20	NA
+GluK2	Q13002	S868	phosphorylation	K886	SUMOylation	NA	NA	NA	18	NA
+KAP-1	Q13263	K676	SUMOylation	S824	phosphorylation	NA	NA	NA	148	NA
+KAP-1	Q13263	S824	phosphorylation	K554	SUMOylation	NA	NA	NA	270	NA
+KAP-1	Q13263	S824	phosphorylation	K779	SUMOylation	NA	NA	NA	45	NA
+KAP-1	Q13263	S824	phosphorylation	K804	SUMOylation	NA	NA	NA	20	NA
+EIF4EBP1	Q13541	T37	phosphorylation	T70	phosphorylation	NA	NA	NA	33	NA
+EIF4EBP1	Q13541	T46	phosphorylation	T70	phosphorylation	NA	NA	NA	24	NA
+EIF4EBP1	Q13541	T70	phosphorylation	S65	phosphorylation	5BXV_B	X-RAY DIFFRACTION	2.10	5	10.6013
+hnRNP_D	Q14103	S87	phosphorylation	S83	phosphorylation	NA	NA	NA	4	NA
+BECN1	Q14457	K430	acetylation	K437	acetylation	NA	NA	NA	7	NA
+BECN1	Q14457	S234	phosphorylation	S295	phosphorylation	NA	NA	NA	61	NA
+BECN1	Q14457	S93	phosphorylation	S96	phosphorylation	NA	NA	NA	3	NA
+BECN1	Q14457	Y229	phosphorylation	Y233	phosphorylation	NA	NA	NA	4	NA
+Nav1.5	Q14524	R513	methylation	S516	phosphorylation	NA	NA	NA	3	NA
+MEF2D	Q14814	S444	phosphorylation	K439	SUMOylation	NA	NA	NA	5	NA
+NFKBIB	Q15653	S19	phosphorylation	S23	phosphorylation	NA	NA	NA	4	NA
+CaMK4	Q16566	S189	O-GlcNAcylation	T200	phosphorylation	NA	NA	NA	11	NA
+CaMK4	Q16566	S58	O-GlcNAcylation	T200	phosphorylation	NA	NA	NA	142	NA
+CaMK4	Q16566	T57	O-GlcNAcylation	T200	phosphorylation	NA	NA	NA	143	NA
+PDCD4	Q53EL6	S71	phosphorylation	S76	phosphorylation	NA	NA	NA	5	NA
+ESR2	Q92731	S12	phosphorylation	K4	SUMOylation	NA	NA	NA	8	NA
+ESR2	Q92731	S12	phosphorylation	S8	phosphorylation	NA	NA	NA	4	NA
+ESR2	Q92731	S6	phosphorylation	K4	SUMOylation	NA	NA	NA	2	NA
+ESR2	Q92731	S8	phosphorylation	K4	SUMOylation	NA	NA	NA	4	NA
+BAD	Q92934	R94	methylation	S99	phosphorylation	NA	NA	NA	5	NA
+BAD	Q92934	R96	methylation	S99	phosphorylation	NA	NA	NA	3	NA
+Cdc6	Q99741	K105	acetylation	S106	phosphorylation	NA	NA	NA	1	NA
+Cdc6	Q99741	K109	acetylation	S106	phosphorylation	NA	NA	NA	3	NA
+Cdc6	Q99741	K92	acetylation	S106	phosphorylation	NA	NA	NA	14	NA
+MKI67IP	Q9BYG3	T238	phosphorylation	S230	phosphorylation	NA	NA	NA	8	NA
+MKI67IP	Q9BYG3	T238	phosphorylation	T234	phosphorylation	NA	NA	NA	4	NA
+SIK2	Q9H0K1	K53	acetylation	T175	phosphorylation	NA	NA	NA	122	NA
+CLSPN	Q9HAW4	S30	phosphorylation	S34	phosphorylation	NA	NA	NA	4	NA
+PGC-1alpha	Q9UBK2	T299	phosphorylation	T295	phosphorylation	NA	NA	NA	4	NA
+USP25	Q9UHP3	K141	SUMOylation	K99	ubiquitination	2MUX_A	SOLUTION NMR	NOT	42	66.9889
+FBXO5	Q9UKT4	S145	phosphorylation	S149	phosphorylation	NA	NA	NA	4	NA
+HSF4	Q9ULV5	S298	phosphorylation	K293	SUMOylation	NA	NA	NA	5	NA
+SRC-3	Q9Y6Q9	S505	phosphorylation	K723	ubiquitination	NA	NA	NA	218	NA
+SRC-3	Q9Y6Q9	S505	phosphorylation	K786	ubiquitination	NA	NA	NA	281	NA
