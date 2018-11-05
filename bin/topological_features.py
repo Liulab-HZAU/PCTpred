@@ -28,7 +28,7 @@ def main(args = sys.argv):
 
     f = open(args.out, 'w')
     for key in degree:
-        f.write('{0}\t{1}\t{2}\t{3}\t{4}\n'.format(key,degree[key],closeness[key],betweenness[key],clustering[key]))
+        f.write('{0}\t{1}\t{2}\t{3}\t{4}\n'.format(key[0],key[1],closeness[key[0]],betweenness[key[0]],clustering[key[0]]))
     f.close()
     
 if __name__ == '__main__':   
